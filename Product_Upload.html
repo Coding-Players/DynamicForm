@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Product Upload Html</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/Product_Upload.css">
+    </head>
+    <body>
+        <div class="Product_Upload_BaseContainer">
+            <div class="Product_Upload_HolderContainer">
+
+                <form action="#" class="Product_Upload_Form">
+
+                    <div class="Product_Upload_ProductNameHolder">
+                        <label for="id_prod_name">Product Name:</label> 
+                        <input type="text" name="prod_name" maxlength="255" value="" required="" id="id_prod_name" placeholder="Enter Product Name">
+                    </div>
+
+                    <div class="Product_Upload_OfferHolder">
+                        <label for="id_prod_offer">Offer:</label>
+                        <input type="number" name="prod_offer" value="0" id="id_prod_offer">
+                        <span>%</span>
+                    </div>
+
+                    <div class="Product_Upload_PictureHolder">
+                        <div class="Product_Upload_image_preview" id="Product_Upload_image_Preview">
+                            <img src="" alt="Image Preview" class="Product_Upload_image_preview__image">
+                            <span class="Product_Upload_image_preview_default_text">Image PreView</span>
+                        </div>
+                        <input type="file" name="prod_picture" accept="image/*" required="" id="id_prod_picture">
+                        <label for="id_prod_picture">
+                            <img src="Icon\folderIcon.svg" alt="file Icon">
+                            Choose A Picture, required.
+                        </label>
+                    </div>
+
+                    <div class="Product_Upload_Price_quantity_Madein_Holder Product_Update_InputHolder">
+                        <div class="Product_Upload_Price Price_quantity_Madein_Holder">
+                            <label for="id_quantity">Price: Rs.</label> 
+                            <input type="number" name="quantity" value="0" id="id_quantity">
+                        </div>
+
+                        <div class="Product_Upload_quantity Price_quantity_Madein_Holder">
+                            <label for="id_in_terms_of">/</label> 
+                            <select name="in_terms_of" id="id_in_terms_of">
+                              <option value="kg" selected="">kg</option>
+                              <option value="pack">pack</option>
+                              <option value="piece">piece</option>
+                              <option value="gm">gm</option>
+                              <option value="L">L</option>
+                              <option value="ml">ml</option>
+                            </select>
+                        </div>
+
+                        <div class="Product_Upload_Madein Price_quantity_Madein_Holder">
+                            <label for="id_prod_origin">Made In:</label> 
+                            <select name="in_terms_of" id="id_prod_origin">
+                              <option value="kg" selected="">India</option>
+                              <option value="Us">Us</option>
+                              <option value="Bengladesh">Bangladesh</option>
+                              <option value="UAE">UAE</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="Product_Upload_Product_Description_Holder">
+                        <textarea name="prod_description" required="" id="id_prod_description" placeholder="Enter Your Description"></textarea>
+                    </div>
+
+                    <div class="Submit_Button">
+                        <button type="submit">Upload Product</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+        
+        <script src="js/Product_Upload.js" async defer></script>
+    </body>
+</html>

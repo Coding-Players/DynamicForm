@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Product_Upload_BaseContainer{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    color: #6666d3;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 110px 0px;
+}
+
+.Product_Upload_HolderContainer{
+    height: 80vh;
+    width: 100%;
+    max-width: 400px;
+    background-color: transparent;
+    box-shadow: 0px 0px 2px #aaa;
+}
+
+.Product_Upload_Form{
+    height: 100%;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.Product_Upload_ProductNameHolder{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.Product_Upload_ProductNameHolder label{
+    font-weight: bold;
+    color: #6666d3;
+    padding: 0px 5px;
+}
+.Product_Upload_ProductNameHolder input{
+    height: 25px;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6666d3;
+}
+.Product_Upload_ProductNameHolder input:focus{
+    outline: 0;
+}
+
+
+
+/* Offer */
+.Product_Upload_OfferHolder{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    background-color: #413e3e77;
+    color: #fff;
+    padding: 0 5px;
+    position: relative;
+    z-index: 1;
+}
+.Product_Upload_OfferHolder label{
+    width: 40%;
+}
+.Product_Upload_OfferHolder input{
+    width: 50%;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+.Product_Upload_OfferHolder input:focus{
+    outline: 0;
+}
+
+
+/* Product Image */
+.Product_Upload_PictureHolder{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #aaa;
+    transform: translateY(-35px);
+}
+.Product_Upload_image_preview{
+    height: 360px;
+    width: 100%;
+}
+.Product_Upload_PictureHolder input{
+    display: none;
+}
+.Product_Upload_PictureHolder label{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+/* For Price, Quantity and Country of Origin */
+.Product_Upload_Price_quantity_Madein_Holder{
+    display: flex;
+    transform: translateY(-40px);
+    padding: 5px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+/* Product Price */
+.Price_quantity_Madein_Holder{
+    display: flex;
+    padding: 5px;
+}
+.Product_Upload_Price{
+   width: 130px; 
+}
+.Product_Upload_Price label{
+    width: 80px;
+    overflow: hidden;
+}
+.Product_Upload_Price input{
+    width: 50px;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    color: #6666d3;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Product Quantity */
+.Product_Upload_quantity select{
+    border: none;
+    color: #6666d3;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Product Made In */
+.Product_Upload_Madein{
+    width: 200px;
+    background-color: #ddd;
+    margin-left: 10px;
+}
+
+
+
+
+/* Description Of Products */
+.Product_Upload_Product_Description_Holder{
+    display: flex;
+    width: 100%;
+    border: none;
+    height: 60px;
+    transform: translateY(-40px);
+    justify-content: center;
+    overflow: auto;
+}
+
+.Product_Upload_Product_Description_Holder textarea{
+    resize: none;
+    width: 100%;
+    max-height: 130px;
+    font-size: 16px;
+    padding: 5px;
+    color: #6666d3;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    word-spacing: 0.5px;
+    background-color: #c5c5ff79;
+}
+
+.Product_Upload_Product_Description_Holder textarea:focus{
+    outline: 0;
+}
+
+.Submit_Button{
+    width: 100%;
+    padding: 5px 0;
+    transform: translateY(-40px);
+    height: 40px;
+}
+.Submit_Button button{
+    width: 100%;
+    height: 100%;
+    background-color: #c5c5ff79;
+    border: none;
+    font-size: 16px;
+    color: green;
+    border-radius: 5px;
+    font-weight: bold;
+    font-variant: small-caps;
+
+}
