@@ -110,6 +110,24 @@
     align-items: center;
     background-color: #fff;
 }
+/* Adjust Image position And Its text */
+.Product_Upload_image_preview__image{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    object-fit: cover;
+}
+.Product_Upload_image_preview__image{
+    display: none;
+}
+.Product_Upload_image_preview_default_text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 
 
 /* For Price, Quantity and Country of Origin */
@@ -207,4 +225,50 @@
     font-weight: bold;
     font-variant: small-caps;
 
+}
+
+@media only screen and (max-width: 480px){
+    .Product_Upload_ProductNameHolder label{
+        font-size: 14px;
+    }
+    .Product_Upload_ProductNameHolder input{
+        font-size: 14px;
+        color: #6666d3;
+        min-width: 50px;
+        max-width: 200px;
+    }
+    .Product_Upload_OfferHolder{
+        height: 25px;
+    }
+    .Product_Upload_OfferHolder label{
+        font-size: 14px;
+    }
+    .Product_Upload_OfferHolder input{
+        font-size: 14px;
+    }
+    .Product_Upload_Price{
+        width: 120px; 
+     }
+    .Product_Upload_Price_quantity_Madein_Holder{
+        font-size: 14px;
+    }
+    .Product_Upload_Price input{
+        height: 20px;
+        font-size: 14px;
+    }
+    
+    /* Product Quantity */
+    .Product_Upload_quantity select{
+        height: 20px;
+        font-size: 14px;
+    }
+    /* Product Made In */
+    .Product_Upload_Madein{
+        margin-left: 5px;
+    }
+
+    /* Description Of Products */
+    .Product_Upload_Product_Description_Holder textarea{
+        font-size: 14px;
+    }
 }
